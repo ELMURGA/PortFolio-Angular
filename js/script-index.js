@@ -3,6 +3,7 @@
    ================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log('✅ script-index.js cargado correctamente');
     
     // ================================
     // DATOS DE LOS PROYECTOS
@@ -420,7 +421,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // MODAL DE PROYECTOS
     // ================================
     const modal = document.getElementById('project-modal');
-    if (!modal) return; // Si no hay modal, salir
+    if (!modal) {
+        console.warn('⚠️ Modal no encontrado en esta página');
+        return; // Si no hay modal, salir
+    }
+    console.log('✅ Modal encontrado, inicializando...');
     
     const modalOverlay = modal.querySelector('.project-modal-overlay');
     const modalClose = modal.querySelector('.project-modal-close');
@@ -496,15 +501,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Event listeners para todos los botones de "Ver Proyecto"
     if (viewProjectBtns.length > 0) {
+        console.log(`✅ Encontrados ${viewProjectBtns.length} botones de proyecto`);
         viewProjectBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 e.preventDefault();
                 const projectId = btn.getAttribute('data-project');
-                console.log('Abriendo proyecto:', projectId); // Debug
+                console.log('🔄 Abriendo proyecto:', projectId);
                 openModal(projectId);
             });
         });
+    } else {
+        console.warn('⚠️ No se encontraron botones .view-project-btn');
     }
 
     if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
