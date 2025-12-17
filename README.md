@@ -87,8 +87,42 @@ PORTFOLIO/
 ├── 📁 Imagenes/                     # Recursos visuales (formato WebP)
 │   ├── logo/                        # Logo principal y favicons
 │   │   └── logo.webp
-│   ├── personal/ y Uso
+│   ├── personal/                    # Fotografías personales
+│   │   └── mio.webp                 # (LCP - Largest Contentful Paint)
+│   ├── proyectos/                   # Imágenes de proyectos
+│   │   ├── pinturasmerpa.webp       # Proyecto Pinturas Merpa
+│   │   ├── utrewal.webp             # Proyecto Utrewal
+│   │   └── ...                      # Otros proyectos
+│   ├── clientes/                    # Logos de clientes (carrusel)
+│   │   └── *.webp
+│   └── tech/                        # Iconos de tecnologías (SVG)
+│       ├── html5.svg
+│       ├── css3.svg
+│       ├── javascript.svg
+│       └── ...
+│
+└── 📁 documents/                    # Documentos descargables
+    └── CV-Alejandro-Hernandez-Murga.pdf
+```
 
+### Convenciones de Nomenclatura
+- **HTML**: Nombres descriptivos en minúsculas con guiones
+- **CSS**: BEM-like para clases específicas, Tailwind para utilidades
+- **JS**: camelCase para variables y funciones
+- **Imágenes**: lowercase con guiones, formato WebP para rendimiento
+
+## 🚀 Instalación y Uso
+* | `#FFFFFF` | `rgb(255, 255, 255)` | Texto principal |
+| 🔘 **Gris Claro** | `#e5e7eb` | `rgb(229, 231, 235)` | Bordes, dividers |
+| 🔘 **Gris Medio** | `#9ca3af` | `rgb(156, 163, 175)` | Texto secundario |
+
+### Tipografía
+
+- **Headings**: Archivo Black (900) - Impacto visual
+- **Body**: Inter (400, 700) - Legibilidad optimizada
+- **Scale**: Escala modular con base 1rem y ratio 1.5
+
+## 📱 Páginas
 ### Desarrollo Local
 
 1. **Clona el repositorio**
@@ -103,7 +137,31 @@ PORTFOLIO/
    ```bash
    # Con Python 3
    python3 -m http.server 8000
-   Design System
+   
+   # Con Node.js (si tienes npx)
+   npx http-server
+   
+   # Con VS Code
+   # Instala la extensión "Live Server" y haz clic derecho > "Open with Live Server"
+   ```
+   
+   **Opción B - Directamente:**
+   - Abre `index.html` en tu navegador (puede tener limitaciones con algunos recursos)
+
+3. **Accede al sitio**
+   ```
+   http://localhost:8000
+   ```
+
+### Despliegue en Producción
+
+El sitio está configurado para desplegarse automáticamente en **Vercel**:
+
+1. Conecta tu repositorio con Vercel
+2. Cada push a `main` despliega automáticamente
+3. URL de producción: [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app)
+
+## 🎨 Design System
 
 ### Paleta de Colores
 
@@ -128,7 +186,20 @@ PORTFOLIO/
 **Formulario de contacto funcional**
 - Validación en tiempo real (nombre, email, mensaje)
 - Integración con Formspree para gestión de emails
-- Información de contacto directo (email, teléfono, redes sociales)
+  - Enlace al proyecto en vivo
+  - Imágenes optimizadas en WebP
+- Proyectos incluidos:
+  - Pinturas Merpa (React + Vite)
+  - Utrewal - Volkswagen (HTML/CSS/JS)
+  - Y más...
+
+### 📜 [Certificados](/pages/certificados.html)
+**Certificaciones y formación continua**
+- Listado de certificaciones profesionales
+- Enlaces de verificación externos
+- Categorización por área (Diseño, Desarrollo, Marketing)
+
+## 🔧 Personalizaciónacto directo (email, teléfono, redes sociales)
 - Diseño limpio con focus states accesibles
 
 ### 🖼️ [Proyectos](/pages/proyectos.html)
@@ -165,7 +236,7 @@ Para adaptar este portfolio a tus necesidades:
 
 ## 📞 Contacto
 
-<div align="center">
+<diva align="center">
 
 | Plataforma | Enlace |
 |------------|--------|
@@ -176,77 +247,7 @@ Para adaptar este portfolio a tus necesidades:
 | 💼 **LinkedIn** | [Alejandro Hernández Murga](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga) |
 | 🌐 **Portfolio** | [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app) |
 
-</div>
-
----
-
-<div align="center">
-
-### 📝 Licencia
-
-**© 2025 Alejandro Hernández Murga**  
-Todos los derechos reservados.
-
-Hecho con ❤️, ☕ y mucho 🎨
-
-</div🚀 Instalación
-
-1. **Clona el repositorio**
-   \`\`\`bash
-   git clone https://github.com/ELMURGA/PORTFOLIO.git
-   \`\`\`
-
-2. **Abre el proyecto**
-   \`\`\`bash
-   cd PORTFOLIO
-   \`\`\`
-
-3. **Ejecuta en tu navegador**
-   - Abre \`index.html\` directamente
-   - O usa una extensión como Live Server en VS Code
-
-## 🎨 Paleta de Colores
-
-| Color | Hex | Uso |
-|-------|-----|-----|
-| 🟠 Naranja Principal | \`#ff7a2a\` | Acentos, hovers, CTAs |
-| 🟠 Naranja Secundario | \`#ff6a00\` | Gradientes |
-| ⚫ Negro | \`#000000\` | Fondo principal |
-| ⚪ Blanco | \`#FFFFFF\` | Texto principal |
-| 🔘 Gris | \`#9ca3af\` | Texto secundario |
-
-## 📱 Páginas
-
-### 🏠 Index
-- Hero section con llamada a la acción
-- Sección "Sobre mí"
-- Carrusel de clientes
-- Servicios ofrecidos
-- Galería de tecnologías con efecto glow
-- Proyectos destacados
-- Timeline de formación
-- Sección de contacto con degradado naranja
-
-### 📧 Contacto
-- Formulario funcional con validación
-- Integración con Formspree
-- Información de contacto directa
-
-### 🖼️ Proyectos
-- Galería filtrable por categorías
-- Efectos hover interactivos
-- Modal de vista detallada
-
-### 📜 Certificados
-- Listado de certificaciones
-- Enlaces a verificación
-
-## 📞 Contacto
-
-<p align="center">
-  <a href="mailto:alejandrohernandemurga@gmail.com">📧 alejandrohernandemurga@gmail.com</a><br>
-  <a href="tel:+34676448762">📱 +34 676 448 762</a><br>
-  <a href="https://www.instagram.com/ale_h.m/">📸 @ale_h.m</a><br>
+</diva href="https://www.instagram.com/ale_h.m/">📸 @ale_h.m</a><br>
   <a href="https://github.com/ELMURGA">💻 GitHub</a><br>
   <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga">💼 LinkedIn</a>
 </p>
