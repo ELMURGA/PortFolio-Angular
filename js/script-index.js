@@ -520,25 +520,28 @@ document.addEventListener('DOMContentLoaded', function () {
     // ================================
     // INICIALIZAR SWIPER DE CLIENTES
     // ================================
-    const clientSwiper = new Swiper('.client-swiper', {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 20,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+    const swiperElement = document.querySelector('.client-swiper');
+    if (swiperElement && typeof Swiper !== 'undefined') {
+        const clientSwiper = new Swiper('.client-swiper', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
             },
-        },
-    });
+        });
+    }
 
     // ================================
     // SCROLL SUAVE A CONTACTO (SOLO INTERNO)
@@ -546,25 +549,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const ctaButtons = document.querySelectorAll('a.cta-contact');
     const contactSection = document.querySelector('#contacto');
 
-    ctaButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            // Solo interceptar si el enlace apunta a #contacto (no a pages/contacto.html)
-            if (btn.getAttribute('href') !== 'pages/contacto.html' && contactSection) {
-                e.preventDefault();
+    if (ctaButtons.length > 0) {
+        ctaButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Solo interceptar si el enlace apunta a #contacto (no a pages/contacto.html)
+                if (btn.getAttribute('href') !== 'pages/contacto.html' && contactSection) {
+                    e.preventDefault();
 
-                // Añade animación de swing al botón clicado
-                btn.classList.remove('swing-once');
-                void btn.offsetWidth;
-                btn.classList.add('swing-once');
+                    // Añade animación de swing al botón clicado
+                    btn.classList.remove('swing-once');
+                    void btn.offsetWidth;
+                    btn.classList.add('swing-once');
 
-                // Calcular posición teniendo en cuenta el header sticky
-                const header = document.querySelector('header');
-                const headerHeight = header ? header.offsetHeight : 0;
-                const targetY = contactSection.getBoundingClientRect().top + window.pageYOffset - (headerHeight + 16);
+                    // Calcular posición teniendo en cuenta el header sticky
+                    const header = document.querySelector('header');
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const targetY = contactSection.getBoundingClientRect().top + window.pageYOffset - (headerHeight + 16);
 
-                window.scrollTo({ top: targetY, behavior: 'smooth' });
-            }
+                    window.scrollTo({ top: targetY, behavior: 'smooth' });
+                }
+            });
         });
-    });
+    }
 
 });
