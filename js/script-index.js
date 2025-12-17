@@ -434,11 +434,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Detectar si estamos en la página de proyectos
     const isProyectosPage = window.location.pathname.includes('proyectos.html');
     const imagePrefix = isProyectosPage ? '../' : '';
+    console.log('📍 Pathname:', window.location.pathname);
+    console.log('📍 isProyectosPage:', isProyectosPage);
+    console.log('📍 imagePrefix:', imagePrefix);
 
     // Función para abrir modal
     function openModal(projectId) {
         const project = projectsData[projectId];
-        if (!project) return;
+        if (!project) {
+            console.error('❌ Proyecto no encontrado:', projectId);
+            return;
+        }
+        
+        console.log('📦 Proyecto encontrado:', project.title);
+        console.log('🖼️ Ruta de imagen:', project.image);
+        console.log('🔗 Ruta final:', imagePrefix + project.image);
 
         // Rellenar contenido del modal con ruta ajustada
         document.getElementById('modal-project-title').textContent = project.title;
