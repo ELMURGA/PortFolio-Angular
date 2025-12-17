@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'matalascanas': {
             title: 'CD Atlético Matalascañas',
             tags: ['Diseño Gráfico', 'Branding', 'Identidad Visual'],
-            image: 'Imagenes/proyectos/1. CD ATLETICO MATALASCAÑAS .png',
+            image: 'Imagenes/proyectos/matalascanas.webp',
             description: 'Desarrollo completo de la identidad visual para el CD Atlético Matalascañas, un club deportivo que necesitaba renovar su imagen de marca.',
             details: `
                 <h4>🎯 Objetivo del Proyecto</h4>
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'cartel': {
             title: 'Cartel Promocional para Evento',
             tags: ['Diseño Gráfico', 'Publicidad', 'Marketing'],
-            image: 'Imagenes/proyectos/Cartel (A3 vertical) fiesta discoteca minimalista negro y naranja.png',
+            image: 'Imagenes/proyectos/cartel.webp',
             description: 'Diseño de cartel promocional con estética minimalista y moderna para evento nocturno.',
             details: `
                 <h4>🎯 Concepto</h4>
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'gyot': {
             title: 'Pepe Gotera y Otilio',
             tags: ['Diseño Gráfico', 'Publicidad', 'Canva'],
-            image: 'Imagenes/proyectos/GYOT.png',
+            image: 'Imagenes/proyectos/gyot.webp',
             description: 'Cartel publicitario para empresa de chapuzas con diseño creativo y llamativo.',
             details: `
                 <h4>🎯 Objetivo</h4>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'dazenty': {
             title: 'Dazenty – Agencia de Diseño & Desarrollo Web',
             tags: ['Next.js', 'React', 'Branding', 'Desarrollo Web'],
-            image: 'Imagenes/proyectos/iniciodazenty.png',
+            image: 'Imagenes/proyectos/dazenty.webp',
             description: 'Web de presentación para una agencia creativa que ofrece servicios de diseño gráfico, desarrollo web y branding con enfoque moderno y profesional.',
             details: `
                 <h4>📅 Año</h4>
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'nextday': {
             title: 'Next Day - Flyer DJ Carlos Berlanga',
             tags: ['Diseño Gráfico', 'Flyer', 'Canva', 'Publicidad'],
-            image: 'Imagenes/proyectos/NEXTDAYCARLLOS.png',
+            image: 'Imagenes/proyectos/nextday.webp',
             description: 'Flyer promocional para el DJ Carlos Berlanga, diseñado para comunicar sus fechas de actuación.',
             details: `
                 <h4>� Cliente</h4>
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'proyecto-h': {
             title: 'Goal Wear - Logo Tienda de Camisetas de Fútbol',
             tags: ['Diseño Gráfico', 'Branding', 'Logotipo', 'Canva'],
-            image: 'Imagenes/proyectos/h.png',
+            image: 'Imagenes/proyectos/goalwear.webp',
             description: 'Diseño de logotipo para Goal Wear, empresa de venta de camisetas de fútbol en Utrera.',
             details: `
                 <h4>⚽ Empresa</h4>
@@ -202,8 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'clubgelves': {
             title: 'Carnet Socio Club Gelves',
             tags: ['Diseño Gráfico', 'Branding', 'Print'],
-            image: 'Imagenes/proyectos/1ªclubgelves.png',
-            images: ['Imagenes/proyectos/1ªclubgelves.png', 'Imagenes/proyectos/2ªclubgelves.png'], // Múltiples imágenes
+            image: 'Imagenes/proyectos/clubgelves1.webp',
+            images: ['Imagenes/proyectos/clubgelves1.webp', 'Imagenes/proyectos/clubgelves2.webp'], // Múltiples imágenes
             description: 'Diseño de carnet de socio temporada 24-25 con tipografía protagonista y jerarquía clara para datos clave.',
             details: `
                 <h4>📅 Temporada</h4>
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'costadelsol': {
             title: 'Logo Costa del Sol',
             tags: ['Diseño Gráfico', 'Branding', 'Logotipo'],
-            image: 'Imagenes/proyectos/logo-costa-del-sol.png',
+            image: 'Imagenes/proyectos/costadelsol.webp',
             description: 'Diseño de logotipo para empresa de comercio mayorista localizada en Marbella, Málaga.',
             details: `
                 <h4>📍 Ubicación</h4>
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'sevillatp': {
             title: 'Sevilla Tarjetas Plásticas - Sitio Web Corporativo',
             category: 'web',
-            image: 'Imagenes/proyectos/iniciosevillatp.png',
+            image: 'Imagenes/proyectos/sevillatp.webp',
             tags: ['Desarrollo Web', 'Diseño Web', 'Branding', 'E-commerce'],
             description: 'Diseño y desarrollo web para empresa especializada en tarjetas plásticas PVC, impresión y rotulación en Sevilla.',
             details: `
@@ -329,6 +329,89 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>Sitio web funcional que ha consolidado la presencia digital de la empresa, facilitando la captación de clientes y la gestión eficiente de pedidos con plazos de entrega desde 24 horas hasta 7-10 días laborables según necesidades.</p>
             `,
             websiteUrl: 'https://www.sevillatarjetasplasticas.com',
+            hasWebsite: true
+        },
+        'pinturasmerpa': {
+            title: 'Pinturas Merpa - Sitio Web Corporativo',
+            category: 'web',
+            image: 'Imagenes/proyectos/pinturasmerpa.webp',
+            tags: ['Desarrollo Web', 'Diseño Web', 'Branding', 'En Desarrollo'],
+            description: 'Diseño y desarrollo web para empresa de pinturas profesionales con catálogo de productos y servicios especializados.',
+            details: `
+                <h4>🏢 Sobre el Cliente</h4>
+                <p><strong>Pinturas Merpa</strong> es una empresa especializada en la venta y distribución de pinturas profesionales para todo tipo de superficies y proyectos.</p>
+                
+                <h4>🎯 Objetivo del Proyecto</h4>
+                <p>Crear una presencia digital profesional que muestre el catálogo completo de productos, facilite la comunicación con clientes y posicione a la empresa como referente en el sector de pinturas.</p>
+                
+                <h4>🎨 Características del Diseño Web</h4>
+                <ul>
+                    <li>Diseño web responsive y atractivo</li>
+                    <li>Catálogo de productos organizado por categorías</li>
+                    <li>Paleta de colores profesional y corporativa</li>
+                    <li>Navegación intuitiva y accesible</li>
+                    <li>Formulario de contacto integrado</li>
+                </ul>
+                
+                <h4>🚀 Estado del Proyecto</h4>
+                <p><strong>En desarrollo</strong> - El sitio web está actualmente en fase de construcción, añadiendo nuevas funcionalidades y contenido.</p>
+                
+                <h4>💡 Tecnologías</h4>
+                <p>HTML5, CSS3, JavaScript, diseño responsive</p>
+                
+                <h4>✨ Próximas Funcionalidades</h4>
+                <ul>
+                    <li>Galería de proyectos realizados</li>
+                    <li>Calculadora de cantidad de pintura</li>
+                    <li>Sección de consejos y tutoriales</li>
+                    <li>Sistema de solicitud de presupuestos</li>
+                </ul>
+            `,
+            websiteUrl: 'https://pinturasmerpa.vercel.app',
+            hasWebsite: true
+        },
+        'utrewal': {
+            title: 'Utrewal - Proyecto Web Interactivo',
+            category: 'web',
+            image: 'Imagenes/proyectos/utrewal.webp',
+            tags: ['Desarrollo Web', 'Frontend', 'JavaScript', 'En Desarrollo'],
+            description: 'Proyecto web interactivo con diseño moderno, animaciones fluidas y funcionalidades dinámicas.',
+            details: `
+                <h4>🎯 Sobre el Proyecto</h4>
+                <p><strong>Utrewal</strong> es un proyecto web experimental que explora las posibilidades del desarrollo frontend moderno con un enfoque en la experiencia de usuario.</p>
+                
+                <h4>💡 Concepto</h4>
+                <p>Desarrollo de una aplicación web interactiva que combina diseño visual atractivo con funcionalidades dinámicas para crear una experiencia inmersiva.</p>
+                
+                <h4>🎨 Características del Diseño</h4>
+                <ul>
+                    <li>Interfaz moderna y minimalista</li>
+                    <li>Animaciones suaves y transiciones fluidas</li>
+                    <li>Diseño responsive para todos los dispositivos</li>
+                    <li>Paleta de colores cuidadosamente seleccionada</li>
+                    <li>Tipografía legible y estética</li>
+                </ul>
+                
+                <h4>🚀 Estado del Proyecto</h4>
+                <p><strong>En desarrollo</strong> - El proyecto está en fase activa de desarrollo, implementando nuevas características y mejoras continuas.</p>
+                
+                <h4>💻 Tecnologías Utilizadas</h4>
+                <ul>
+                    <li>HTML5 semántico</li>
+                    <li>CSS3 con animaciones avanzadas</li>
+                    <li>JavaScript vanilla para interactividad</li>
+                    <li>GitHub Pages para el hosting</li>
+                </ul>
+                
+                <h4>✨ Próximas Mejoras</h4>
+                <ul>
+                    <li>Optimización de rendimiento</li>
+                    <li>Nuevas secciones de contenido</li>
+                    <li>Integración de más funcionalidades interactivas</li>
+                    <li>Mejoras en accesibilidad</li>
+                </ul>
+            `,
+            websiteUrl: 'https://elmurga.github.io/VW/',
             hasWebsite: true
         }
     };

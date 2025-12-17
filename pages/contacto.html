@@ -6,15 +6,32 @@
     <title>Contacto - Alejandro Hernández Murga</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../Imagenes/logo/logo.png">
-    <link rel="apple-touch-icon" href="../Imagenes/logo/logo.png">
+    <link rel="icon" type="image/png" href="../Imagenes/logo/logo.webp">
+    <link rel="apple-touch-icon" href="../Imagenes/logo/logo.webp">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Critical CSS -->
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{background:#000;color:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5}
+        header{padding:1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;background:rgba(0,0,0,.95);backdrop-filter:blur(4px)}
+        .logo img{height:7rem;object-fit:contain}
+        main{max-width:1280px;margin:0 auto;padding:3rem 1.5rem}
+        .flex{display:flex}
+        .items-center{align-items:center}
+        img{max-width:100%;height:auto}
+        @media(min-width:768px){.logo img{height:10rem}}
+        @media(min-width:1024px){.logo img{height:14rem}}
+    </style>
     
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS Files -->
@@ -27,7 +44,7 @@
     <header id="main-header" class="p-6 md:p-8 flex justify-between items-center sticky top-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm transition-all duration-300">
         <div class="logo">
             <a href="../index.html">
-                <img src="../Imagenes/logo/logo.png" alt="Logo Alejandro Hernández Murga" class="h-28 md:h-40 lg:h-56 object-contain"> 
+                <img src="../Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" class="h-28 md:h-40 lg:h-56 object-contain"> 
             </a>
         </div>
         <nav class="hidden md:flex items-center space-x-8">
@@ -246,7 +263,7 @@
     </button>
 
     <!-- Custom JavaScript Files -->
-    <script src="../js/script-common.js"></script>
-    <script src="../js/script-contacto.js"></script>
+    <script src="../js/script-common.js" defer></script>
+    <script src="../js/script-contacto.js" defer></script>
 </body>
 </html>
