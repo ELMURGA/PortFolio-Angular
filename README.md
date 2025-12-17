@@ -247,10 +247,6 @@ Para adaptar este portfolio a tus necesidades:
 | 💼 **LinkedIn** | [Alejandro Hernández Murga](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga) |
 | 🌐 **Portfolio** | [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app) |
 
-</diva href="https://www.instagram.com/ale_h.m/">📸 @ale_h.m</a><br>
-  <a href="https://github.com/ELMURGA">💻 GitHub</a><br>
-  <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga">💼 LinkedIn</a>
-</p>
 
 ---
 
