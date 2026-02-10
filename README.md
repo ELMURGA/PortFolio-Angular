@@ -1,10 +1,12 @@
-
+# Alejandro Hernández Murga
 
 <div align="center">
 
 <img src="src/assets/images/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="150" />
 
-<br/>
+### 🎨 Portfolio
+
+
 
 ![Angular](https://img.shields.io/badge/Angular-21-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
