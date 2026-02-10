@@ -1,4 +1,4 @@
-# 🎨 Portfolio - Alejandro Hernández Murga
+#  Portfolio - Alejandro Hernández Murga
 
 <div align="center">
 
