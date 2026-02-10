@@ -17,7 +17,7 @@
 
 </div>
 
-#  Portfolio - Alejandro Hernández Murga
+ Alejandro Hernández Murga
 ---
 
 ## 📋 Tabla de Contenidos
