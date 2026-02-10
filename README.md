@@ -1,259 +1,290 @@
+# 🎨 Portfolio - Alejandro Hernández Murga
+
 <div align="center">
-  <img src="Imagenes/logo/logo.webp" alt="Logo Alejandro Hernández Murga" width="200">
-  
-  # Portfolio - Alejandro Hernández Murga
-  
-  ### 🎨 Diseñador Gráfico | 💻 Desarrollador Web
-  
-  [![Live Site](https://img.shields.io/badge/🌐_Live_Site-alejandro--murga.vercel.app-success?style=for-the-badge)](https://alejandro-murga.vercel.app)
-  [![GitHub](https://img.shields.io/badge/GitHub-ELMURGA-181717?style=for-the-badge&logo=github)](https://github.com/ELMURGA/PORTFOLIO)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alejandro_Hernández-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga)
-  [![Email](https://img.shields.io/badge/Email-Contacto-EA4335?style=for-the-badge&logo=gmail)](mailto:alejandrohernandemurga@gmail.com)
-  
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-  ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+![Angular](https://img.shields.io/badge/Angular-21-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+**Portfolio profesional de diseño gráfico y desarrollo web**
+
+[🌐 Ver Demo](https://alejandrohernandez.dev) • [📧 Contacto](mailto:contacto@alejandrohernandez.dev)
+
 </div>
 
 ---
 
-## 📋 Sobre el Proyecto
+## 📋 Tabla de Contenidos
 
-Portfolio web profesional optimizado para rendimiento, que muestra proyectos de **diseño gráfico** y **desarrollo web**. Construido con tecnologías modernas y enfocado en experiencia de usuario, accesibilidad y velocidad de carga.
-
-### 🌟 Características Principales
-
-- ⚡ **Alto Rendimiento** - Optimizado con imágenes WebP (92% reducción de peso)
-- 📱 **Diseño Responsive** - Adaptado para todos los dispositivos y resoluciones
-- 🎯 **UX/UI Moderna** - Interfaz oscura con acentos naranja (#ff7a2a)
-- ✨ **Animaciones Fluidas** - Transiciones CSS suaves y efectos visuales
-- 🔝 **Header Inteligente** - Reducción automática al hacer scroll
-- 🖼️ **Galería Interactiva** - Sistema de filtrado por categorías
-- 📧 **Formulario Funcional** - Validación en tiempo real con Formspree
-- 🎨 **Critical CSS** - Renderizado instantáneo sin bloqueos
-- ♿ **Accesibilidad** - Semántica HTML5 y navegación por teclado
-
-## 🛠️ Stack Tecnológico
-
-### Frontend
-- **HTML5** - Estructura semántica y accesible
-- **CSS3** - Estilos personalizados con variables CSS
-- **Tailwind CSS 3** - Framework utility-first vía CDN
-- **JavaScript (ES6+)** - Vanilla JS sin dependencias pesadas
-
-### Librerías & Servicios
-- **Swiper.js 11** - Carruseles táctiles y responsivos
-- **Formspree** - Gestión de formularios sin backend
-- **Google Fonts** - Tipografías Archivo Black, Inter
-- **Vercel** - Hosting y despliegue continuo
-
-### Optimizaciones
-- **WebP Images** - Formato de imagen optimizado (73MB → 6MB)
-- **Critical CSS** - Estilos críticos inline para First Paint
-- **Resource Hints** - Preconnect, preload para recursos externos
-- **Async Loading** - Carga asíncrona de fuentes y estilos no críticos
-- **Local Assets** - Iconos tecnológicos almacenados localmente (sin CDN)
-
-## 📁 Estructura del Proyecto
-
-\`\`\`
-```
-PORTFOLIO/
-├── 📄 index.html                    # Página principal (landing)
-├── 📄 vercel.json                   # Configuración de despliegue Vercel
-├── 📄 README.md                     # Documentación del proyecto
-├── 📄 GUIA_FORMULARIO.md            # Guía de configuración Formspree
-│
-├── 📁 pages/                        # Páginas adicionales
-│   ├── contacto.html                # Formulario de contacto
-│   ├── proyectos.html               # Galería de proyectos filtrable
-│   └── certificados.html            # Certificaciones y formación
-│
-├── 📁 css/                          # Hojas de estilo
-│   ├── style-common.css             # Estilos compartidos (header, footer, botones)
-│   ├── style-index.css              # Estilos específicos del index
-│   ├── style-contacto.css           # Estilos del formulario de contacto
-│   ├── style-proyectos.css          # Estilos de la galería de proyectos
-│   └── style-certificados.css       # Estilos de certificaciones
-│
-├── 📁 js/                           # Scripts JavaScript
-│   ├── script-common.js             # Funcionalidad compartida (menú móvil, scroll)
-│   ├── script-index.js              # Datos de proyectos y modal
-│   ├── script-contacto.js           # Validación de formulario
-│   └── script-proyectos.js          # Sistema de filtrado de proyectos
-│
-├── 📁 Imagenes/                     # Recursos visuales (formato WebP)
-│   ├── logo/                        # Logo principal y favicons
-│   │   └── logo.webp
-│   ├── personal/                    # Fotografías personales
-│   │   └── mio.webp                 # (LCP - Largest Contentful Paint)
-│   ├── proyectos/                   # Imágenes de proyectos
-│   │   ├── pinturasmerpa.webp       # Proyecto Pinturas Merpa
-│   │   ├── utrewal.webp             # Proyecto Utrewal
-│   │   └── ...                      # Otros proyectos
-│   ├── clientes/                    # Logos de clientes (carrusel)
-│   │   └── *.webp
-│   └── tech/                        # Iconos de tecnologías (SVG)
-│       ├── html5.svg
-│       ├── css3.svg
-│       ├── javascript.svg
-│       └── ...
-│
-└── 📁 documents/                    # Documentos descargables
-    └── CV-Alejandro-Hernandez-Murga.pdf
-```
-
-### Convenciones de Nomenclatura
-- **HTML**: Nombres descriptivos en minúsculas con guiones
-- **CSS**: BEM-like para clases específicas, Tailwind para utilidades
-- **JS**: camelCase para variables y funciones
-- **Imágenes**: lowercase con guiones, formato WebP para rendimiento
-
-## 🚀 Instalación y Uso
-* | `#FFFFFF` | `rgb(255, 255, 255)` | Texto principal |
-| 🔘 **Gris Claro** | `#e5e7eb` | `rgb(229, 231, 235)` | Bordes, dividers |
-| 🔘 **Gris Medio** | `#9ca3af` | `rgb(156, 163, 175)` | Texto secundario |
-
-### Tipografía
-
-- **Headings**: Archivo Black (900) - Impacto visual
-- **Body**: Inter (400, 700) - Legibilidad optimizada
-- **Scale**: Escala modular con base 1rem y ratio 1.5
-
-## 📱 Páginas
-### Desarrollo Local
-
-1. **Clona el repositorio**
-   ```bash
-   git clone https://github.com/ELMURGA/PORTFOLIO.git
-   cd PORTFOLIO
-   ```
-
-2. **Ejecuta el proyecto**
-   
-   **Opción A - Servidor local (recomendado):**
-   ```bash
-   # Con Python 3
-   python3 -m http.server 8000
-   
-   # Con Node.js (si tienes npx)
-   npx http-server
-   
-   # Con VS Code
-   # Instala la extensión "Live Server" y haz clic derecho > "Open with Live Server"
-   ```
-   
-   **Opción B - Directamente:**
-   - Abre `index.html` en tu navegador (puede tener limitaciones con algunos recursos)
-
-3. **Accede al sitio**
-   ```
-   http://localhost:8000
-   ```
-
-### Despliegue en Producción
-
-El sitio está configurado para desplegarse automáticamente en **Vercel**:
-
-1. Conecta tu repositorio con Vercel
-2. Cada push a `main` despliega automáticamente
-3. URL de producción: [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app)
-
-## 🎨 Design System
-
-### Paleta de Colores
-
-| Color | Hex | RGB | Uso |
-|-------|-----|-----|-----|
-| 🟠 **Naranja Principal** | `#ff7a2a` | `rgb(255, 122, 42)` | CTAs, hovers, enlaces activos |
-| 🟠 **Naranja Secundario** | `#ff6a00` | `rgb(255, 106, 0)` | Gradientes, sombras |
-| ⚫ **Negro** | `#000000` | `rgb(0, 0, 0)` | Fondo principal |
-| ⚪ **Blanco* del Sitio
-
-### 🏠 [Inicio](/) (`index.html`)
-**Landing page principal del portfolio**
-- Hero section con fotografía y tagline "Hagamos arte. Hagamos diseño."
-- Sección "Sobre mí" con información personal y profesional
-- Carrusel de clientes trabajados (Swiper.js)
-- Stack tecnológico con iconos SVG y efecto glow
-- Proyectos destacados con enlaces directos
-- Timeline interactiva de formación académica y profesional
-- CTA de contacto con degradado naranja
-
-### 📧 [Contacto](/pages/contacto.html)
-**Formulario de contacto funcional**
-- Validación en tiempo real (nombre, email, mensaje)
-- Integración con Formspree para gestión de emails
-  - Enlace al proyecto en vivo
-  - Imágenes optimizadas en WebP
-- Proyectos incluidos:
-  - Pinturas Merpa (React + Vite)
-  - Utrewal - Volkswagen (HTML/CSS/JS)
-  - Y más...
-
-### 📜 [Certificados](/pages/certificados.html)
-**Certificaciones y formación continua**
-- Listado de certificaciones profesionales
-- Enlaces de verificación externos
-- Categorización por área (Diseño, Desarrollo, Marketing)
-
-## 🔧 Personalizaciónacto directo (email, teléfono, redes sociales)
-- Diseño limpio con focus states accesibles
-
-### 🖼️ [Proyectos](/pages/proyectos.html)
-**Galería completa de trabajos**
-- Sistema de filtrado por categorías (Diseño Gráfico, Branding, Web, Packaging)
-- Grid responsivo con efectos hover
-- Modal de vista detallada con:
-  - Descripción completa del proyecto
-  - Tecnologías utilizadas
-  - � Personalización
-
-Para adaptar este portfolio a tus necesidades:
-
-1. **Contenido**: Actualiza los textos en cada HTML
-2. **Imágenes**: Reemplaza las imágenes en `/Imagenes/` (usa WebP)
-3. **Colores**: Modifica las variables CSS en `style-common.css`
-4. **Proyectos**: Edita el array `projectsData` en `js/script-index.js`
-5. **Formulario**: Configura tu endpoint de Formspree en `contacto.html`
-
-## 📊 Métricas de Rendimiento
-
-**Lighthouse Score** (Mobile - diciembre 2025):
-- Performance: ~85-90
-- Accessibility: 95+
-- Best Practices: 95+
-- SEO: 90+
-
-**Optimizaciones aplicadas:**
-- Conversión de imágenes a WebP (-92% peso)
-- Critical CSS inline
-- Resource hints (preconnect, preload)
-- Lazy loading de imágenes no críticas
-- Minificación de CSS y JS
-
-## 📞 Contacto
-
-<diva align="center">
-
-| Plataforma | Enlace |
-|------------|--------|
-| 📧 **Email** | [alejandrohernandemurga@gmail.com](mailto:alejandrohernandemurga@gmail.com) |
-| 📱 **Teléfono** | [+34 676 448 762](tel:+34676448762) |
-| 📸 **Instagram** | [@ale_h.m](https://www.instagram.com/ale_h.m/) |
-| 💻 **GitHub** | [ELMURGA](https://github.com/ELMURGA) |
-| 💼 **LinkedIn** | [Alejandro Hernández Murga](https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-murga) |
-| 🌐 **Portfolio** | [alejandro-murga.vercel.app](https://alejandro-murga.vercel.app) |
-
+- [Descripción](#-descripción)
+- [Características](#-características)
+- [Tecnologías](#-tecnologías)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Instalación](#-instalación)
+- [Scripts Disponibles](#-scripts-disponibles)
+- [Configuración](#-configuración)
+- [SEO y Rendimiento](#-seo-y-rendimiento)
+- [Despliegue](#-despliegue)
+- [Licencia](#-licencia)
 
 ---
 
-<p align="center">
-  <strong>© 2025 Alejandro Hernández Murga. Todos los derechos reservados.</strong>
-</p>
+## 📖 Descripción
 
-<p align="center">
-  Hecho con ❤️ y ☕
-</p>
+Portfolio profesional desarrollado con **Angular 21** que presenta mis trabajos de diseño gráfico, branding, desarrollo web y packaging. El sitio cuenta con un diseño moderno, animaciones fluidas, soporte para tema claro/oscuro y está completamente optimizado para SEO y rendimiento.
+
+### 🗂 Proyectos incluidos
+
+| Proyecto | Categoría | Web |
+|----------|-----------|-----|
+| CD Atlético Matalascañas | Branding | — |
+| Cartel Promocional para Evento | Diseño Gráfico | — |
+| Pepe Gotera y Otilio | Diseño Gráfico | — |
+| Dazenty – Agencia de Diseño & Desarrollo Web | Desarrollo Web | [Ver](https://dazenty.vercel.app) |
+| Next Day - Flyer DJ Carlos Berlanga | Diseño Gráfico | — |
+| Goal Wear - Logo Tienda de Camisetas | Branding | [Ver](https://www.instagram.com/football_wear__utrera/) |
+| Carnet Socio Club Gelves | Branding | — |
+| Logo Costa del Sol | Branding | — |
+| Sevilla Tarjetas Plásticas | Desarrollo Web | [Ver](https://www.sevillatarjetasplasticas.com) |
+| Pinturas Merpa | Desarrollo Web | [Ver](https://pinturasmerpa.vercel.app) |
+| Utrewal - Proyecto Web Interactivo | Desarrollo Web | [Ver](https://elmurga.github.io/VW/) |
+
+---
+
+## ✨ Características
+
+### 🎯 Funcionalidades Principales
+- **Tema Dual** - Soporte completo para modo claro y oscuro con persistencia
+- **Diseño Responsive** - Optimizado para móviles, tablets y escritorio
+- **Animaciones Fluidas** - Transiciones suaves y efectos hover interactivos
+- **Filtrado de Proyectos** - Sistema de filtros por categoría
+- **Modal de Proyectos** - Vista detallada de cada proyecto
+- **Carrusel Infinito** - Logos de clientes con animación continua
+- **Formulario de Contacto** - Con validación reactiva
+
+### 🚀 Optimizaciones
+- **Lazy Loading** - Carga diferida de imágenes
+- **SEO Optimizado** - Meta tags, Open Graph, Schema.org
+- **PWA Ready** - Manifest y configuración para instalación
+- **Rendimiento** - Puntuación alta en Lighthouse
+
+### 🎨 Diseño
+- **Tipografía** - Archivo Black para títulos, Inter para cuerpo
+- **Paleta de Colores** - Naranja primario (#f97316) con fondos oscuros/claros
+- **Componentes Reutilizables** - Cards, botones, modales consistentes
+
+---
+
+## 🛠 Tecnologías
+
+### Frontend
+| Tecnología | Versión | Descripción |
+|------------|---------|-------------|
+| Angular | 21.1 | Framework principal |
+| TypeScript | 5.9 | Lenguaje de programación |
+| SCSS | - | Preprocesador CSS |
+| RxJS | 7.8 | Programación reactiva |
+
+### Herramientas de Desarrollo
+| Herramienta | Uso |
+|-------------|-----|
+| Angular CLI | Scaffolding y builds |
+| Prettier | Formateo de código |
+| Vercel | Despliegue y hosting |
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+angular-portfolio/
+├── src/
+│   ├── app/
+│   │   ├── components/          # Componentes reutilizables
+│   │   │   ├── header/          # Navegación principal
+│   │   │   ├── footer/          # Pie de página
+│   │   │   ├── project-card/    # Tarjetas de proyecto
+│   │   │   └── project-modal/   # Modal de detalles
+│   │   │
+│   │   ├── pages/               # Páginas de la aplicación
+│   │   │   ├── home/            # Página principal
+│   │   │   ├── portfolio/       # Galería de proyectos
+│   │   │   ├── certificados/    # Certificaciones
+│   │   │   └── contacto/        # Formulario de contacto
+│   │   │
+│   │   ├── models/              # Interfaces TypeScript
+│   │   ├── services/            # Servicios de la aplicación
+│   │   └── styles/              # Variables SCSS globales
+│   │
+│   ├── assets/                  # Recursos estáticos
+│   │   └── images/              # Imágenes del sitio
+│   │
+│   ├── index.html               # HTML principal con SEO
+│   ├── styles.scss              # Estilos globales
+│   ├── manifest.json            # PWA manifest
+│   ├── robots.txt               # Directivas para crawlers
+│   └── sitemap.xml              # Mapa del sitio
+│
+├── angular.json                 # Configuración de Angular
+├── package.json                 # Dependencias y scripts
+└── vercel.json                  # Configuración de Vercel
+```
+
+---
+
+## 🚀 Instalación
+
+### Prerrequisitos
+
+- **Node.js** 18.x o superior
+- **npm** 9.x o superior
+- **Angular CLI** 21.x
+
+### Pasos
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/ELMURGA/PortFolio-Angular.git
+   cd PortFolio-Angular
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Iniciar servidor de desarrollo**
+   ```bash
+   npm start
+   ```
+
+4. **Abrir en el navegador**
+   ```
+   http://localhost:4200
+   ```
+
+---
+
+## 📜 Scripts Disponibles
+
+| Script | Comando | Descripción |
+|--------|---------|-------------|
+| `start` | `npm start` | Servidor de desarrollo |
+| `start:prod` | `npm run start:prod` | Servidor en modo producción |
+| `build` | `npm run build` | Build de producción |
+| `build:dev` | `npm run build:dev` | Build de desarrollo |
+| `watch` | `npm run watch` | Build con watch mode |
+| `analyze` | `npm run analyze` | Analizar tamaño del bundle |
+
+---
+
+## ⚙️ Configuración
+
+### Variables SCSS
+
+```scss
+// src/app/styles/_variables.scss
+
+// Colores primarios
+$primary-color: #f97316;    // Naranja
+$primary-dark: #ea580c;
+$primary-light: #fb923c;
+
+// Tipografías
+$font-archivo: 'Archivo Black', sans-serif;
+$font-inter: 'Inter', sans-serif;
+```
+
+### Tema Claro/Oscuro
+
+El tema se gestiona mediante CSS custom properties y se persiste en `localStorage`:
+
+```typescript
+// Cambiar tema
+themeService.toggleTheme();
+
+// Obtener tema actual
+const isDark = themeService.isDarkTheme();
+```
+
+---
+
+## 🔍 SEO y Rendimiento
+
+### Meta Tags Implementados
+
+- ✅ Title y Description optimizados
+- ✅ Open Graph para redes sociales
+- ✅ Twitter Cards
+- ✅ Schema.org JSON-LD
+- ✅ Canonical URL
+- ✅ Robots meta tag
+
+### Archivos SEO
+
+| Archivo | Propósito |
+|---------|-----------|
+| `robots.txt` | Directivas para crawlers |
+| `sitemap.xml` | Mapa del sitio para buscadores |
+| `manifest.json` | PWA manifest |
+
+---
+
+## 🌐 Despliegue
+
+### Vercel (Recomendado)
+
+1. Conectar repositorio de GitHub
+2. Configurar:
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist/angular-portfolio/browser`
+3. Desplegar
+
+### Configuración de Vercel
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+---
+
+## 📊 Lighthouse Scores
+
+| Métrica | Puntuación |
+|---------|------------|
+| Performance | 90+ |
+| Accessibility | 95+ |
+| Best Practices | 95+ |
+| SEO | 100 |
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+---
+
+## 👤 Autor
+
+**Alejandro Hernández Murga**
+
+- 🌐 Website: [alejandrohernandez.dev](https://alejandrohernandez.dev)
+- 💼 LinkedIn: [/in/alejandrohernandez](https://linkedin.com/in/alejandrohernandez)
+- 🎨 Behance: [/alejandrohernandez](https://behance.net/alejandrohernandez)
+- 💻 GitHub: [@ELMURGA](https://github.com/ELMURGA)
+
+---
+
+<div align="center">
+
+**⭐ Si te gusta este proyecto, dale una estrella en GitHub ⭐**
+
+Hecho con ❤️ por Alejandro Hernández Murga
+
+</div>

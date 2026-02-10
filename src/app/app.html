@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" [class.visible]="showScrollToTop" (click)="scrollToTop()" aria-label="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+  </svg>
+</button>

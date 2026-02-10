@@ -1,0 +1,74 @@
+<!-- Certificados Hero -->
+<section class="certificados-hero">
+    <h1 class="page-title">Mis <span class="highlight">Certificados</span></h1>
+    <p class="page-subtitle">Formación continua y certificaciones que respaldan mi experiencia en diseño gráfico, desarrollo web y tecnologías digitales.</p>
+</section>
+
+<!-- Colecciones de Certificados -->
+<section class="certificados-content">
+    <h2 class="section-title">Colecciones de Certificados</h2>
+
+    <div class="colecciones-grid">
+        <article class="coleccion-card" *ngFor="let col of colecciones">
+            <div class="coleccion-icon">
+                <!-- Icono Desarrollo Web -->
+                <svg *ngIf="col.icon === 'code'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <!-- Icono Bases de Datos -->
+                <svg *ngIf="col.icon === 'database'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+                <!-- Icono Linux & Redes -->
+                <svg *ngIf="col.icon === 'server'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+            </div>
+            <h3 class="coleccion-title">{{ col.title }}</h3>
+            <p class="coleccion-org">{{ col.platform }}</p>
+            <p class="coleccion-date">{{ col.date }}</p>
+            <a [href]="col.url" target="_blank" rel="noopener" class="coleccion-link">
+                Ver carpeta
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </a>
+        </article>
+    </div>
+</section>
+
+<!-- Certificados Individuales Destacados -->
+<section class="certificados-content certificados-individuales">
+    <h2 class="section-title">Certificados Destacados</h2>
+
+    <div class="certificados-grid">
+        <article class="certificado-card" *ngFor="let cert of certificados">
+            <div class="certificado-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="certificado-info">
+                <h3>{{ cert.title }}</h3>
+                <p class="platform">{{ cert.platform }}</p>
+                <span class="date">{{ cert.date }}</span>
+            </div>
+            <a [href]="cert.url" target="_blank" rel="noopener" class="certificado-link">
+                Ver certificado
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </a>
+        </article>
+    </div>
+</section>
+
+<!-- Botón Ver Todos -->
+<section class="ver-todos-section">
+    <a [href]="driveUrl" target="_blank" rel="noopener" class="ver-todos-btn">
+        Ver Todos los Certificados
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+    </a>
+</section>

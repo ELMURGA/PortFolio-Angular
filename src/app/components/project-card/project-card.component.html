@@ -1,0 +1,17 @@
+<article class="project-card" (click)="onViewProject()">
+    <div class="project-image-container">
+        <img [src]="project.image" [alt]="project.title" class="project-img">
+        <div class="project-overlay">
+            <button class="view-project-btn" (click)="onViewProject(); $event.stopPropagation()">
+                Ver Proyecto
+            </button>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-tags">
+            <span class="project-tag" *ngFor="let tag of project.tags.slice(0, 3)">{{ tag }}</span>
+        </div>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+    </div>
+</article>

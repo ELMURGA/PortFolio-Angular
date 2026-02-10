@@ -1,0 +1,172 @@
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="hero-image">
+            <img src="assets/images/personal/mio.webp" alt="Retrato de Alejandro" class="hero-img">
+        </div>
+        <div class="hero-text">
+            <h1 class="hero-title">Hagamos arte.<br>Hagamos diseño.</h1>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="about-section">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="assets/images/personal/foto2.webp" alt="Sobre mí - Alejandro Hernández" class="about-img">
+        </div>
+        <div class="about-text">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-description">
+                <p>Soy Alejandro un estudiante de <strong>Diseño y Desarrollo Web</strong> con una gran pasión por crear
+                    experiencias digitales que conecten con las personas.</p>
+                <p>Me apasiona la creación de <strong>soluciones innovadoras y experiencias digitales de
+                        calidad</strong>, con un enfoque especial en el <strong>diseño gráfico</strong> y el
+                    <strong>desarrollo frontend</strong>.
+                </p>
+                <p>Mi formación me ha permitido desarrollar habilidades tanto en <strong>programación</strong> como en
+                    <strong>diseño visual</strong>, aunque mi verdadera pasión está en el <strong
+                        class="highlight">frontend</strong>, donde el código y la creatividad se encuentran.
+                </p>
+                <p>Me interesa explorar continuamente <strong>nuevas herramientas y tecnologías</strong> que aporten
+                    valor a los proyectos y mejoren la experiencia del usuario.</p>
+                <p>Creo firmemente en el <strong>aprendizaje continuo</strong>, la <strong>adaptabilidad</strong> y el
+                    <strong>trabajo en equipo</strong> como pilares fundamentales para crecer como profesional.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients Section -->
+<section class="clients-section">
+    <h3 class="clients-title">Conoce las marcas que ya han confiado en mí</h3>
+    <div class="clients-carousel">
+        <div class="clients-track">
+            <!-- Primera copia de logos -->
+            <div class="client-logo" *ngFor="let client of clients">
+                <img [src]="client.logo" [alt]="client.name" loading="lazy">
+            </div>
+            <!-- Segunda copia para efecto infinito -->
+            <div class="client-logo" *ngFor="let client of clients">
+                <img [src]="client.logo" [alt]="client.name" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Formación y Experiencia Section -->
+<section id="formacion" class="experience-section">
+    <h2 class="section-title centered">Formación y Experiencia</h2>
+
+    <div class="experience-container">
+        <!-- Formación Académica -->
+        <div class="experience-block">
+            <h3 class="experience-subtitle">Formación Académica</h3>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let edu of education">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4 class="timeline-title">{{ edu.title }}</h4>
+                            <span class="timeline-date">{{ edu.dateRange }}</span>
+                        </div>
+                        <p class="timeline-location">{{ edu.location }}</p>
+                        <p class="timeline-description">{{ edu.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiencia Laboral -->
+        <div class="experience-block">
+            <h3 class="experience-subtitle">Experiencia Laboral</h3>
+            <div class="timeline">
+                <div class="timeline-item" *ngFor="let work of workExperience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4 class="timeline-title">{{ work.title }}</h4>
+                            <span class="timeline-date">{{ work.dateRange }}</span>
+                        </div>
+                        <p class="timeline-location">{{ work.location }}</p>
+                        <ul class="timeline-responsibilities" *ngIf="work.responsibilities">
+                            <li *ngFor="let resp of work.responsibilities">{{ resp }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Descargar CV -->
+    <div class="download-cv">
+        <a href="assets/documents/Alejandro-Hernandez-Murga.pdf" download="CV-Alejandro-Hernandez-Murga.pdf"
+            class="download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Descargar CV
+        </a>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- Services Section -->
+<section id="que-hago" class="services-section">
+    <h2 class="section-title centered">Hago que tu marca se vea, se entienda y se recuerde.</h2>
+
+    <div class="services-list">
+        <div class="service-item" *ngFor="let service of services">
+            <div class="service-number">{{ service.number }}</div>
+            <h3 class="service-title">{{ service.title }}</h3>
+            <p class="service-description">{{ service.description }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section id="galeria-tecnologias" class="technologies-section">
+    <div class="tech-header">
+        <h2 class="section-title">Mis Tecnologías</h2>
+        <p class="section-subtitle">Una colección de las herramientas y lenguajes que uso.</p>
+    </div>
+
+    <div class="tech-grid">
+        <a *ngFor="let tech of technologies" [href]="tech.url" target="_blank" rel="noopener noreferrer"
+            [title]="'Documentación ' + tech.name" class="tech-card">
+            <img [src]="tech.icon" [alt]="'Logo de ' + tech.name" class="tech-icon" loading="lazy">
+        </a>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="proyectos" class="projects-section">
+    <h2 class="section-title centered">Proyectos Destacados</h2>
+    <p class="section-subtitle centered">Una selección de mis trabajos más recientes en diseño gráfico y desarrollo web
+    </p>
+
+    <div class="projects-grid">
+        <app-project-card *ngFor="let project of featuredProjects" [project]="project"
+            (viewProject)="openProjectModal($event)">
+        </app-project-card>
+    </div>
+
+    <div class="projects-cta">
+        <a routerLink="/portfolio" class="view-all-btn">
+            <span>Ver Todos los Proyectos</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- Project Modal -->
+<app-project-modal [project]="selectedProject" [isOpen]="isModalOpen" (closeModal)="closeProjectModal()">
+</app-project-modal>

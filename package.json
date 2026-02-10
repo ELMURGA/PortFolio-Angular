@@ -1,0 +1,48 @@
+{
+  "name": "angular-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio profesional de Alejandro Hernández Murga - Diseño Gráfico y Desarrollo Web",
+  "author": "Alejandro Hernández Murga",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start:prod": "ng serve --configuration production",
+    "build": "ng build --configuration production",
+    "build:dev": "ng build --configuration development",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint",
+    "analyze": "ng build --stats-json && npx webpack-bundle-analyzer dist/angular-portfolio/stats.json"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "^21.1.0",
+    "@angular/compiler": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0",
+    "@angular/platform-browser": "^21.1.0",
+    "@angular/router": "^21.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.1.2",
+    "@angular/cli": "^21.1.2",
+    "@angular/compiler-cli": "^21.1.0",
+    "typescript": "~5.9.2"
+  }
+}

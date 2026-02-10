@@ -1,0 +1,102 @@
+@use '../../styles/variables' as vars;
+
+.contact-section {
+    background: #000000;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-family: vars.$font-archivo;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+.section-subtitle {
+    color: var(--color-text-secondary);
+    max-width: 42rem;
+    margin: 0 auto 3rem;
+    font-size: 1.125rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    // Solo en móvil limitamos el ancho para layout 3+2
+    @media (max-width: 767px) {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: vars.$primary-color;
+        border-color: vars.$primary-color;
+        color: #fff;
+        transform: translateY(-4px);
+    }
+}
+
+.social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.site-footer {
+    background: #000000;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+    margin: 0;
+}
+
+.copyright {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+
+// Tema claro
+:host-context([data-theme="light"]) {
+    .contact-section {
+        background: #ffffff;
+    }
+
+    .site-footer {
+        background: #ffffff;
+        border-top-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .social-link {
+        background: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.1);
+        color: var(--color-text);
+
+        &:hover {
+            background: vars.$primary-color;
+            border-color: vars.$primary-color;
+            color: #fff;
+        }
+    }
+}

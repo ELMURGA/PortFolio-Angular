@@ -1,0 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://alejandrohernandez.dev/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block specific paths
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /assets/documents/
+
+# Allow specific assets
+Allow: /assets/images/
+Allow: /*.css
+Allow: /*.js

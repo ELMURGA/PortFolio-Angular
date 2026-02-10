@@ -1,0 +1,89 @@
+<div class="project-modal" [class.active]="isOpen" (click)="close()" *ngIf="project">
+    <div class="project-modal-overlay"></div>
+
+    <div class="project-modal-content" (click)="onContentClick($event)">
+        <button class="project-modal-close" (click)="close()" aria-label="Cerrar modal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <div class="project-modal-body">
+            <!-- Imagen del proyecto -->
+            <div class="project-modal-image">
+                <ng-container *ngIf="project.images && project.images.length > 1; else singleImage">
+                    <img *ngFor="let img of project.images" [src]="img" [alt]="project.title">
+                </ng-container>
+                <ng-template #singleImage>
+                    <img [src]="project.image" [alt]="project.title">
+                </ng-template>
+            </div>
+
+            <!-- Información del proyecto -->
+            <div class="project-modal-info">
+                <div class="project-modal-tags">
+                    <span class="project-tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+                </div>
+
+                <h3 class="project-modal-title">{{ project.title }}</h3>
+
+                <p class="project-modal-description">{{ project.description }}</p>
+
+                <div class="project-modal-details">
+                    <!-- Cliente -->
+                    <div class="detail-item" *ngIf="project.client">
+                        <h4>👤 Cliente</h4>
+                        <p>{{ project.client }}</p>
+                    </div>
+
+                    <!-- Año -->
+                    <div class="detail-item" *ngIf="project.year">
+                        <h4>📅 Año</h4>
+                        <p>{{ project.year }}</p>
+                    </div>
+
+                    <!-- Tecnologías -->
+                    <div class="detail-item" *ngIf="project.technologies && project.technologies.length > 0">
+                        <h4>🚀 Tecnologías</h4>
+                        <p>{{ project.technologies.join(', ') }}</p>
+                    </div>
+
+                    <!-- Objetivos -->
+                    <div class="detail-item" *ngIf="project.objectives && project.objectives.length > 0">
+                        <h4>🎯 Objetivos</h4>
+                        <ul>
+                            <li *ngFor="let objective of project.objectives">{{ objective }}</li>
+                        </ul>
+                    </div>
+
+                    <!-- Descripción completa -->
+                    <div class="detail-item" *ngIf="project.fullDescription">
+                        <h4>📋 Sobre el Proyecto</h4>
+                        <p>{{ project.fullDescription }}</p>
+                    </div>
+
+                    <!-- Resultado -->
+                    <div class="detail-item" *ngIf="project.results">
+                        <h4>✨ Resultado</h4>
+                        <p>{{ project.results }}</p>
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="project-modal-footer">
+                    <a *ngIf="project.hasWebsite && project.websiteUrl" [href]="project.websiteUrl" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Visitar Sitio Web
+                    </a>
+                    <a routerLink="/contacto" class="btn btn-secondary" (click)="close()">
+                        Solicitar Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

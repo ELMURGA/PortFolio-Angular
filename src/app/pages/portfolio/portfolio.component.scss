@@ -1,0 +1,160 @@
+@use '../../styles/variables' as vars;
+
+.portfolio-hero {
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: vars.$font-archivo;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+        font-size: 4.5rem;
+    }
+}
+
+.page-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.filter-section {
+    padding: 2rem 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+
+    &:hover {
+        background: var(--color-bg-secondary);
+        border-color: vars.$primary-color;
+        color: var(--color-text);
+    }
+
+    &.active {
+        background: vars.$primary-color;
+        border-color: vars.$primary-color;
+        color: #ffffff !important;
+    }
+}
+
+.projects-gallery {
+    padding: 2rem 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 6rem 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: vars.$font-archivo;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+.cta-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, vars.$primary-color, vars.$primary-dark);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 12px 32px rgba(vars.$primary-color, 0.4);
+    }
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+// Tema claro
+:host-context([data-theme="light"]) {
+    .filter-btn {
+        background: #ffffff;
+        color: #111111;
+        border-color: rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            background: #f5f5f5;
+            border-color: vars.$primary-color;
+            color: #111111;
+        }
+
+        &.active {
+            background: vars.$primary-color;
+            border-color: vars.$primary-color;
+            color: #ffffff !important;
+        }
+    }
+}

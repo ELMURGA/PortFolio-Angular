@@ -1,0 +1,46 @@
+<!-- Hero Section -->
+<section class="portfolio-hero">
+    <h1 class="page-title">Mi Portfolio</h1>
+    <p class="page-subtitle">Una colección de mis proyectos de diseño gráfico, branding, desarrollo web y más. Cada
+        proyecto refleja mi pasión por crear experiencias visuales únicas.</p>
+</section>
+
+<!-- Filter Section -->
+<section class="filter-section">
+    <div class="filter-buttons">
+        <button *ngFor="let category of categories" class="filter-btn" [class.active]="isActiveFilter(category.value)"
+            (click)="filterByCategory(category.value)">
+            {{ category.label }}
+        </button>
+    </div>
+</section>
+
+<!-- Projects Gallery -->
+<section class="projects-gallery">
+    <div class="projects-grid">
+        <app-project-card *ngFor="let project of filteredProjects" [project]="project"
+            (viewProject)="openProjectModal($event)">
+        </app-project-card>
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state" *ngIf="filteredProjects.length === 0">
+        <p>No hay proyectos en esta categoría.</p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <h2 class="cta-title">¿Te gusta lo que ves?</h2>
+    <p class="cta-subtitle">Trabajemos juntos para crear algo increíble</p>
+    <a routerLink="/contacto" class="cta-btn">
+        <span>Contactar</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+    </a>
+</section>
+
+<!-- Project Modal -->
+<app-project-modal [project]="selectedProject" [isOpen]="isModalOpen" (closeModal)="closeProjectModal()">
+</app-project-modal>

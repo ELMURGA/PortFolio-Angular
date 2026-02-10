@@ -1,0 +1,59 @@
+// ===================================
+// Portfolio Angular - Variables SCSS
+// ===================================
+
+// Colores primarios
+$primary-color: #f97316; // Naranja
+$primary-dark: #ea580c;
+$primary-light: #fb923c;
+
+// Colores de fondo
+$bg-dark: #000000;
+$bg-darker: #0a0a0a;
+$bg-card: #111111;
+
+// Colores de texto
+$text-white: #ffffff;
+$text-gray-100: #f3f4f6;
+$text-gray-300: #d1d5db;
+$text-gray-400: #9ca3af;
+$text-gray-500: #6b7280;
+
+// Tipografías
+$font-archivo: 'Archivo Black', sans-serif;
+$font-inter: 'Inter', sans-serif;
+$font-base: $font-inter;
+
+// Bordes
+$border-color: rgba(255, 255, 255, 0.1);
+$border-color-hover: rgba(255, 255, 255, 0.2);
+
+// Sombras
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+$shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+$shadow-primary: 0 8px 24px rgba($primary-color, 0.3);
+
+// Bordes redondeados
+$radius-sm: 0.5rem;
+$radius-md: 1rem;
+$radius-lg: 1.5rem;
+$radius-xl: 2rem;
+$radius-full: 9999px;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Z-index layers
+$z-header: 50;
+$z-mobile-menu: 40;
+$z-modal: 1000;
+$z-scroll-top: 100;

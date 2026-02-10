@@ -1,0 +1,290 @@
+@use '../../styles/variables' as vars;
+
+.certificados-hero {
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: vars.$font-archivo;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+
+    .highlight {
+        color: vars.$primary-color;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 4.5rem;
+    }
+}
+
+.page-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.certificados-content {
+    padding: 2rem 1.5rem 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: vars.$font-archivo;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-text);
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+// Colecciones Grid
+.colecciones-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.coleccion-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: vars.$primary-color;
+        box-shadow: 0 12px 32px rgba(vars.$primary-color, 0.2);
+    }
+}
+
+.coleccion-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, vars.$primary-color 0%, vars.$primary-dark 100%);
+    border-radius: 50%;
+    color: #fff;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.coleccion-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.coleccion-org {
+    color: vars.$primary-color;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.coleccion-date {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.coleccion-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    &:hover {
+        background: vars.$primary-color;
+        border-color: vars.$primary-color;
+        color: #fff;
+    }
+}
+
+// Certificados individuales
+.certificados-individuales {
+    padding-top: 4rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.certificados-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.certificado-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: vars.$primary-color;
+        box-shadow: 0 12px 32px rgba(vars.$primary-color, 0.2);
+    }
+}
+
+.certificado-badge {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    color: vars.$primary-color;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.certificado-info {
+    margin-bottom: 1rem;
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--color-text);
+    }
+
+    .platform {
+        color: vars.$primary-color;
+        font-weight: 600;
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .date {
+        color: var(--color-text-muted);
+        font-size: 0.8rem;
+    }
+}
+
+.certificado-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+
+    svg {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    &:hover {
+        background: vars.$primary-color;
+        border-color: vars.$primary-color;
+        color: #fff;
+    }
+}
+
+// Botón Ver Todos
+.ver-todos-section {
+    text-align: center;
+    padding: 2rem 1.5rem 6rem;
+}
+
+.ver-todos-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, vars.$primary-color 0%, vars.$primary-dark 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(vars.$primary-color, 0.3);
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(vars.$primary-color, 0.4);
+    }
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+}
+
+// Light theme adjustments
+:host-context([data-theme="light"]) {
+    .coleccion-card,
+    .certificado-card {
+        background: #fff;
+        border-color: var(--color-border);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .coleccion-link,
+    .certificado-link {
+        &:hover {
+            color: #fff;
+        }
+    }
+}

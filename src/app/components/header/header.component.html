@@ -1,0 +1,93 @@
+<header id="main-header" class="header" [class.scrolled]="isScrolled">
+  <div class="header-container">
+    <!-- Logo Section -->
+    <div class="logo">
+      <a routerLink="/">
+        <img src="assets/images/logo/logo.webp" alt="Logo Alejandro Hernández Murga" class="logo-img">
+      </a>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="desktop-nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+      <a routerLink="/" fragment="que-hago">¿Qué hago?</a>
+      <a routerLink="/" fragment="formacion">Formación</a>
+      <a routerLink="/portfolio" routerLinkActive="active">Proyectos</a>
+      <a routerLink="/certificados" routerLinkActive="active">Certificados</a>
+    </nav>
+
+    <!-- Actions Section -->
+    <div class="header-actions">
+      <button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="isDarkTheme() ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'">
+        <svg *ngIf="isDarkTheme()" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg *ngIf="!isDarkTheme()" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <a routerLink="/contacto" class="cta-button">
+        <svg class="cta-icon" viewBox="0 0 352 512" fill="currentColor">
+          <path d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"/>
+        </svg>
+        <span>CUÉNTAME TU IDEA</span>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen" aria-label="Menú de navegación">
+      <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path *ngIf="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        <path *ngIf="isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" [class.open]="isMobileMenuOpen">
+  <!-- Barra superior con botón de tema y cerrar -->
+  <div class="mobile-menu-header">
+    <button class="mobile-theme-toggle" (click)="toggleTheme()" [attr.aria-label]="isDarkTheme() ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'">
+      <svg *ngIf="isDarkTheme()" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg *ngIf="!isDarkTheme()" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+    <button class="mobile-close-btn" (click)="closeMobileMenu()" aria-label="Cerrar menú">
+      <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mobile-nav">
+    <a routerLink="/" (click)="closeMobileMenu()">Inicio</a>
+    <a routerLink="/" fragment="que-hago" (click)="closeMobileMenu()">¿Qué hago?</a>
+    <a routerLink="/" fragment="formacion" (click)="closeMobileMenu()">Formación</a>
+    <a routerLink="/portfolio" (click)="closeMobileMenu()">Proyectos</a>
+    <a routerLink="/certificados" (click)="closeMobileMenu()">Certificados</a>
+    <a routerLink="/contacto" class="cta-button mobile" (click)="closeMobileMenu()">
+      <span>CUÉNTAME TU IDEA</span>
+    </a>
+  </nav>
+</div>
